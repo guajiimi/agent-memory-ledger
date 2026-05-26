@@ -1,0 +1,21 @@
+{
+  "project": "Agent Memory Ledger",
+  "goal": "Long-running agents need durable memory, but temporary task state and stale facts should not pollute future sessions.",
+  "items": [
+    {
+      "id": "task-1",
+      "text": "Classifies memory candidates",
+      "status": "ready"
+    },
+    {
+      "id": "task-2",
+      "text": "Separates durable facts from task progress",
+      "status": "ready"
+    },
+    {
+      "id": "task-3",
+      "text": "Produces memory review JSON",
+      "status": "review"
+    }
+  ]
+}

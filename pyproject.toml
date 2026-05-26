@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-memory-ledger"
+version = "0.1.0"
+description = "Memory curation helper for AI assistants and long-running agents."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "guajiimi"}]
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+agent-memory-ledger = "agent_memory_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
